@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docplanner Group</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="icon" href="logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Work Sans', sans-serif;
+            
+        }
+        .firstheader {
+            display: flex;
+        }
+
+        .firstimg {
+            margin-left: 12.2rem;
+            margin-top: 1.2rem;
+        }
+        .listing {
+            display: flex;
+            margin-left: 24.4rem;
+            margin-top: 1.6rem;
+            font-family: sans-serif;
+        }
+        .listingone {
+            margin-left: -0.1rem;
+            color: #00B39B;
+        }
+        .listingone:hover {
+            margin-left: -0.1rem;
+            color: #00B39B;
+        }
+
+        .listingtwo {
+            margin-left: 0.9rem;
+            color: #00000064;
+        }
+        .listingtwo:hover {
+            margin-left: 0.9rem;
+            color: #00B39B;
+        }
+
+        .listingthree {
+            margin-left: 0.9rem;
+            color: #00000064;
+        }
+        .listingthree:hover {
+            margin-left: 0.9rem;
+            color: #00B39B;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 6.3rem;
+        }
+
+        .header {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+        .head {
+            font-size: 33px;
+            line-height: 47px;
+            color: #00b39b;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 32.5px;
+            margin-top: -0.2rem;
+            word-spacing: -1px;
+        }
+
+        .paraone {
+            margin-left: 15.3rem;
+            margin-top: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+            width: 21rem;
+        }
+        .paratwo {
+            margin-left: -1.2rem;
+            margin-top: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+            width: 23rem;
+        }
+        .h {
+            line-height: 22.8px;
+            margin-top: -0.1rem;
+        }
+
+        .colorone {
+            background-color: #00CCB1;
+            margin-left: 8rem;
+            margin-top: 4.4rem;
+            padding: 40px;
+            width: 19.9rem;
+            border-radius: 0.6rem;
+            height: 22rem;
+        }
+        .icon {
+            margin-top: 0.5rem;
+        }
+        .pat {
+            color: #ffffff;
+            font-size: 34px;
+            font-weight: 400;
+            margin-top: 1rem;
+        }
+        .find {
+            color: #ffffff;
+            font-size: 21px;
+            font-weight: 300;
+        }
+        .select1 {
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            border: none;
+            font-size: 21px;
+            font-weight: 300;
+            margin-top: 3rem;
+        }
+        .select2 {
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            border: none;
+            font-size: 21px;
+            font-weight: 300;
+            margin-top: 4.5rem;
+        }
+        option {
+            background-color: #00CCB1;
+        }
+
+        .colortwo {
+            background-color: #3D83DF;
+            margin-left: 3.1rem;
+            margin-top: 4.4rem;
+            padding: 40px;
+            width: 17.6rem;
+            border-radius: 0.6rem;
+            height: 22rem;
+        }
+        .opt1 {
+            background-color: #3D83DF;
+        }
+        .colorthree {
+            background-color: #1B2734;
+            margin-left: -4rem;
+            margin-top: 4.4rem;
+            padding: 40px;
+            width: 20.3rem;
+            border-radius: 0.6rem;
+            height: 22rem;
+        }
+        .opt2 {
+            background-color: #1B2734;
+        }
+        .select3 {
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            border: none;
+            font-size: 21px;
+            font-weight: 300;
+            margin-top: 1.9rem;
+        }
+
+        select {
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            border: none;
+            font-size: 21px;
+            font-weight: 300;
+            margin-top: 1rem;
+        }
+        option {
+            background-color: #1B2734;
+        }
+
+        .liltxt {
+            width: 15rem;
+            margin-top: 1.9rem;
+            margin-left: 14.5rem;
+        }
+        .global {
+            color: #00b39b;
+            font-size: 23px;
+            font-weight: 300;
+            line-height: 33px;
+        }
+
+        .img11 {
+            margin-left: -1rem;
+            margin-top: 1.3rem;
+        }
+        .fm1 {
+            margin-left: 2.2rem;
+        }
+        .img22 {
+            margin-top: 1.8rem;
+            margin-left: -1rem;
+        }
+        .img33 {
+            margin-top: 2.5rem;
+            margin-left: -1rem;
+        }
+        .img44 {
+            margin-top: 2.5rem;
+            margin-left: -1rem;
+        }
+
+        .bigwrapper {
+            background-color: #D0FAF4;
+            width: 100vw;
+            margin-top: 3.2rem;
+        }
+        .worldtxt {
+            padding: 6rem;
+        }
+        .wtxt {
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 33px;
+            color: #00b39b;
+            width: 25rem;
+        }
+        .ktxt {
+            margin-top: 2rem;
+            font-size: 15px;
+            font-weight: 400;
+            color: #747474;
+            line-height: 21px;
+            width: 30rem;
+        }
+        .cropl {
+            margin-top: -3.3rem;
+            margin-left: 2.9rem;
+        }
+
+        .white1 {
+            background-color: #FFFFFF;
+            margin-top: 4.4rem;
+            margin-left: 2rem;
+            width: 13.7rem;
+            height: 15.1rem;            
+        }
+        .divflag .flag{
+            margin-left: 6rem;
+            margin-top: 2.5rem;
+            color: #00b39b6c;
+        }
+        .divflag .flagtxt {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #00b39b;
+        }
+        .divflag .country {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 11px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #747474;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.6rem;
+        }
+        .white2 {
+            background-color: #FFFFFF;
+            margin-top: 1.3rem;
+            margin-left: 2rem;
+            width: 13.7rem;
+            height: 15rem; 
+        }
+        .divuser .user {
+            margin-left: 6rem;
+            margin-top: 4rem;
+            color: #00b39b6c;
+        }
+        .divuser .usertxt {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #00b39b;
+        }
+        .divuser .visit {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 11px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #747474;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.6rem;
+        }
+        .whitebox {
+            display: inline-flex;
+        }
+        .white3 {
+            background-color: #FFFFFF;
+            margin-top: 3.2rem;
+            margin-left: 3rem;
+            width: 13.7rem;
+            height: 15.1rem; 
+        }
+        .calender {
+            margin-left: 6rem;
+            margin-top: 4rem;
+            color: #00b39b6c;
+        }
+        .calendertxt {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #00b39b;
+        }
+        .appointment {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 11.5px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #747474;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.6rem;
+        }
+        .white4 {
+            background-color: #FFFFFF;
+            margin-top: 0.1rem;
+            margin-left: 3rem;
+            width: 13.7rem;
+            height: 15.1rem; 
+        }
+        .doctor {
+            margin-left: 6rem;
+            margin-top: 4rem;
+            color: #00b39b6c;
+        }
+        .doctortxt {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1rem;
+            font-size: 26px;
+            font-weight: 300;
+            line-height: 28px;
+            color: #00b39b;
+        }
+        .trust {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 11.5px;
+            line-height: 16px;
+            font-weight: 400;
+            color: #747474;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 0.6rem;
+        }
+        .whitebox2 {
+            display: inline-flex;
+        }
+
+        .improve {
+            margin-top: 5.7rem;
+        }
+        .improvetxt {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 300;
+            line-height: 33px;
+            color: #00b39b;
+        }
+        .more {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 1.5rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            color: #747474;
+        }
+
+        .divimg {
+            margin-left: 20.8rem;
+            margin-top: 8.2rem;
+        }
+        .img1 {
+            display: flex;
+
+        }
+        .img2 {
+            display: flex;
+            margin-top: -1.7rem;
+        }
+        .img3 {
+            display: flex;
+            margin-top: -1.7rem;
+        }
+        .img4 {
+            display: flex;
+            margin-top: -1.7rem;
+        }
+        .img5 {
+            margin-top: -1.7rem;
+            margin-left: 8.9rem;
+        }
+        .pb2 {
+            margin-left: 0.5rem;
+        }
+        .wartxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .warbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.1rem;
+            border-radius: 5px;
+        }
+        .bartxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .barbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 6.1rem;
+            border-radius: 5px;
+        }
+        .muntxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .munbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.4rem;
+            border-radius: 5px;
+        }
+        .isttxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .istbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.3rem;
+            border-radius: 5px;
+        }
+        .romtxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .rombtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.9rem;
+            border-radius: 5px;
+        }
+        .boltxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .bolbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.3rem;
+            border-radius: 5px;
+        }
+        .curtxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .curbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 7.1rem;
+            border-radius: 5px;
+        }
+        .riotxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .riobtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 4.4rem;
+            border-radius: 5px;
+        }
+        .mextxt {
+            padding: 1.3rem;
+            margin-top: 0rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            color: #747474;
+        }
+        .mexbtn {
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 10px;
+            font-weight: 700;
+            color: #ffffff;
+            background-color: #3D83DF;
+            border: none;
+            height: 2.2rem;
+            width: 5.9rem;
+            margin-left: 5.8rem;
+            border-radius: 5px;
+        }
+
+        .lastheader {
+            margin-top: 7rem;
+        }
+        .lh {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: 300;
+            color: #333333;
+        }
+        .current {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+        }
+        .cu {
+            background-color: #3D83DF;
+            color: #ffffff;
+            border: none;
+            font-size: 12px;
+            font-weight: 600;
+            height: 2.5rem;
+            width: 13rem;
+            border-radius: 5px;
+            margin-top: 1rem;
+        }
+        .divfooter {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            margin-top: 6rem;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #ababab;
+        }
+        .color {
+            color: #23527C;
+        }
+        .footer2 {
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: #ababab;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wholepage">
+        <!-- header page -->
+        <div class="firstheader">
+            <img src="FullLogo.png" alt="full logo" class="firstimg" width="268" height="34">
+            <nav class="listing">
+                <a href="#" class="listingone">About us</a>
+                <a href="#" class="listingtwo">Career</a>
+                <a href="#" class="listingthree">Departments</a>
+            </nav>
+        </div>
+
+        <!-- following header -->
+        <div class="wrapper">
+            <div class="logo">
+                <img src="logo.png" alt="logo" width="40" class="log">
+            </div>
+            <div class="header">
+                <h6 class="head">Making the healthcare experience more human</h6>
+            </div>
+        </div>
+
+        <!-- paragraph -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="paraone">
+                        <h6 class="h">We want patients to find the perfect doctor and book an appointment in the most easy way. The patient journey should be enjoyable, and that's why we are always next to them: to help them find the best possible care. Anytime, anywhere.</h6>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="paratwo">
+                        <h6 class="h">We also help doctors to better manage their practice and build their online reputation. With our integrated end-to-end solution, doctors are able<br> not only to improve their online presence, but also to devote their time to what really matters: their patients</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- coloured divs -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="colorone">
+                        <div class="icon"><i class="fa-solid fa-users fa-lg"></i></div>
+                        <h2 class="pat">For patients</h2>
+                        <h5 class="find">Find a doctor, book a visit and solve any health-related doubt</h5>
+                        <select class="select2">
+                            <option>Choose country</option>
+                            <option>Argentina</option>
+                            <option>Brazil </option>
+                            <option>Chile</option>
+                            <option>Colombia</option>
+                            <option>Czech</option>
+                            <option>Italy</option>
+                            <option>Mexico</option>
+                            <option>Peru</option>
+                            <option>Poland</option>
+                            <option>Portugaul</option>
+                            <option>Spain</option>
+                            <option>Turkey</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="colortwo">
+                        <div class="icon"><i class="fa-solid fa-user-doctor fa-lg"></i></div>
+                        <h2 class="pat">For doctors</h2>
+                        <h5 class="find">Save time<br> managing visits and cut no-shows by half</h5>
+                        <select class="select1">
+                            <option class="opt1">Choose country</option>
+                            <option class="opt1">Argentina</option>
+                            <option class="opt1">Brazil </option>
+                            <option class="opt1">Chile</option>
+                            <option class="opt1">Colombia</option>
+                            <option class="opt1">Czech</option>
+                            <option class="opt1">Italy</option>
+                            <option class="opt1">Mexico</option>
+                            <option class="opt1">Peru</option>
+                            <option class="opt1">Poland</option>
+                            <option class="opt1">Portugaul</option>
+                            <option class="opt1">Spain</option>
+                            <option class="opt1">Turkey</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="colorthree">
+                        <div class="icon"><i class="fa-solid fa-hospital fa-lg"></i></div>
+                        <h2 class="pat">For clinics</h2>
+                        <h5 class="find">Deliver an exceptional patient experience in your clinic</h5>
+                        <select>
+                            <option>2 to 20 specialists</option>                            <option>Brazil </option>
+                            <option>Brazil</option>
+                            <option>Czech</option>
+                            <option>Italy</option>
+                            <option>Mexico</option>
+                            <option>Poland</option>
+                            <option>Spain</option>
+                            <option>Turkey</option>
+                        </select>
+
+                        <select class="select3">
+                            <option class="opt2">More than 20 specialists</option>
+                            <option class="opt2">Brazil </option>
+                            <option class="opt2">Italy</option>
+                            <option class="opt2">Mexico</option>
+                            <option class="opt2">Poland</option>
+                            <option class="opt2">Spain</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the little write up close to the imgs -->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="liltxt">
+                        <h5 class="global">We are a global
+                            company<br>
+                            with local culture</h5>
+                    </div>
+                </div>
+
+                <!-- section for all the little imgs -->
+
+                <div class="col-lg-6">
+                    <div class="img11">
+                        <img src="znanylekarz.png" alt="zz" width="78">
+                        <img src="Doctoralia.png" alt="da" width="76" class="fm1">
+                        <img src="MioDottore.png" alt="me" width="76" class="fm1">
+                    </div>
+                    <div class="img22">
+                        <img src="doktortakvimi.png" alt="di" width="78">
+                        <img src="Znamylekar.jpg" alt="zr" width="76" class="fm1">
+                        <img src="logo-jameda.svg" alt="ja" width="76" class="fm1">
+                    </div>
+                    <div class="img33">
+                        <img src="logo-tuotempo.svg" alt="to" width="76">
+                        <img src="logo-gipo-primary.svg" alt="go" width="75" class="fm1">
+                        <img src="logo-clinicloud.svg" alt="cd" width="76" class="fm1">
+                    </div>
+                    <div class="img44">
+                        <img src="logo-feegow.svg" alt="fw" width="75">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- the huge div section with the big logo -->
+
+        <div class="container-fluid">
+            <div class="row">
+                    <div class="col-lg-6 bigwrapper">
+                        <div class="worldtxt">
+                            <h5 class="wtxt">The world's biggest
+                                healthcare platform</h5>
+                                <p class="ktxt">We work from 9 offices all over the world, bringing Docplanner
+                                    Group to life in 13 countries.</p>
+                        </div>
+                        <div class="cropl">
+                            <img src="logocropped.png" alt="cropped">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 bigwrapper">
+                        <!-- div for the white divs on top -->
+                        <div class="whitebox">
+                       
+                            <div class="white1">
+                                <div class="divflag">
+                                    <i class="fa-solid fa-flag fa-2xl flag"></i>
+                                    <h4 class="flagtxt">Leader in 13 countries</h4>
+                                    <p class="country">Poland, Brazil, Mexico, Spain, Italy, Germany, Turkey, Colombia, Czech Republic, Portugal, Argentina, Peru and Chile</p>
+                                </div>
+                            </div>
+
+                            <div class="white3">
+                                <div class="divcalendar">
+                                    <i class="fa-solid fa-calendar-days fa-xl calender"></i>
+                                    <h4 class="calendertxt">15,000,000 appointments</h4>
+                                    <p class="appointment">booked last month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- div body for the white divs below -->
+                        <div class="whitebox2">
+
+                            <div class="white2">
+                                <div class="divuser">
+                                    <i class="fa-solid fa-user-group fa-lg user"></i>
+                                    <h4 class="usertxt">90,000,000 patients</h4>
+                                    <p class="visit">visit our websites each month</p>
+                                </div>
+                            </div>
+
+                            <div class="white4">
+                                <div class="divdoctors">
+                                    <i class="fa-solid fa-people-group fa-lg doctor"></i>
+                                    <h4 class="doctortxt">210,000 active doctors</h4>
+                                    <p class="trust">trust our solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <!-- section for all the city images {quite a stressful website gettint to this jumction lol, but omo learnt a lot} -->
+        <div class="improve">
+            <h5 class="improvetxt">Improve the lives of millions.<br>
+                Change yours forever.</h5>
+                <h6 class="more">More than 2800 team mates share our same vision, goals and passion.<br>
+                    With offices in Warsaw, Barcelona, Munich, Istanbul, Rome, Rio, Bologna,<br>
+                    Mexico City and Curitiba, our search for great talent never stops.</h6>
+        </div>
+        <div class="divimg">
+            <div class="img1">
+                <div class="pb1">
+                    <img src="warsaw.png" alt="warsaw" class="warsaw">
+                        <p class="wartxt">Warsaw <button class="warbtn"><span class="warbtn2">SEE OPENINGS</span></button></p>
+                </div>
+                <div class="pb2">
+                    <img src="barcelona.png" alt="barcelona" class="barcelona">
+                            <p class="bartxt">Barcelona <button class="barbtn">SEE OPENINGS</button></p>
+                </div>
+            </div>
+            <div class="img2">
+                <div class="pb3">
+                    <img src="munich.png" alt="munich">
+                    <p class="muntxt">Munich <button class="munbtn">SEE OPENINGS</button></p>
+                 </div>
+                 <div class="pb2">
+                     <img src="istanbul.png" alt="istanbul">
+                     <p class="isttxt">Istanbul<button class="istbtn">SEE OPENINGS</button></p>
+                 </div>
+            </div>
+            <div class="img3">
+                <div class="pb5">
+                    <img src="rome.png" alt="rome">
+                    <p class="romtxt">Rome <button class="rombtn">SEE OPENINGS</button></p>
+                 </div>
+                 <div class="pb2">
+                     <img src="bologna.png" alt="bologna">
+                     <p class="boltxt">Bologna<button class="bolbtn">SEE OPENINGS</button></p>
+                 </div>
+            </div>
+            <div class="img4">
+                <div class="pb7">
+                    <img src="curitiba.png" alt="cur">
+                    <p class="curtxt">Curitiba <button class="curbtn">SEE OPENINGS</button></p>
+                 </div>
+                 <div class="pb2">
+                     <img src="rio-janeiro.png" alt="rio-janeiro">
+                     <p class="riotxt">Rio De Janeiro<button class="riobtn">SEE OPENINGS</button></p>
+                 </div>
+            </div>
+            <div class="img5">
+                <div class="pb9">
+                    <img src="mexico-city.png" alt="mexico-city">
+                <p class="mextxt">Mexico City<button class="mexbtn">SEE OPENINGS</button></p>
+            </div>
+            </div>
+        </div>
+
+        <!-- last header -->
+
+        <div class="lastheader">
+            <h5 class="lh">Sounds interesting? Join us now!
+            </h5>
+        </div>
+        <div class="current">
+            <button class="cu">SEE ALL CURRENT OPENINGS</button>
+        </div>
+
+        <!-- footer section finally -->
+        <div class="divfooter">
+            <p class="footer1">We are leaders in 13 countries <a href="#" class="color">Poland</a>, <a href="#" class="color">Turkey</a>, <a href="#" class="color">Spain</a>, <a href="#" class="color">Italy</a>, <a href="#" class="color">Germany</a>, <a href="#" class="color">Czech Republic</a>, <a href="#" class="color">Portugal</a>, <a href="#" class="color">Mexico</a>, <a href="#" class="color">Colombia</a>, <a href="#" class="color">Brazil</a>, <a href="#" class="color">Argentina</a>, <a href="#" class="color">Peru</a> and <a href="#" class="color">Chile</a>.</p>
+        </div>
+        <div class="footer2">
+            <p>This site uses cookies to deliver services in accordance with this Privacy Policy. You can specify the conditions for storing or accessing cookies on your browser.<br>
+                www.docplanner.com © 2023</p>
+        </div>
+    </div>
+</body>
+</html>
